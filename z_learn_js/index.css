@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    border: 3px double mediumseagreen;
+    text-align: center;
+    width: 60dvw;
+    height: 60dvh;
+    padding: 10%;
+    margin: 10%;
+}

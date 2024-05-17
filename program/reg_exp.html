@@ -1,0 +1,248 @@
+<!-- Reg-Exp Tasks -->
+
+<!-- Reg-Exp Task 1 -->
+
+<!-- <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>User Validation</title>
+            <style>
+                *{
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                body {
+                    display: flex;
+                    height: 100vh;
+                    justify-content: center;
+                    align-items: center;
+                    background: url("https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg?w=2000");
+                }
+                .container{
+                    border: 1px solid black;
+                    border-radius: 10px ;
+                    padding: 10px 20px;
+                    height: 67vh;
+                    width: 60vh;
+                    color: white;
+                    background: linear-gradient( rgb(132, 240, 240) 1%,blue,rgb(68, 184, 238));
+                }
+                .container .head{
+                    text-align: center;
+                    padding: 10px;
+                    font-size: xx-large;
+                    font-family: cursive;
+                    color: black;
+                }
+                .container label{
+                    font-size: larger;
+                    margin: 5% 0%;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                .container input{
+                    display: block;
+                    border-radius: 3px 10px 10px 3px;
+                    padding: 6px;
+                    width: 100%;
+                    margin: 2% 0% ;
+                    /* border: none; */
+                    /* outline: none; */
+                    /* border-left: 3px solid black; */
+                    font-size: large;
+                }
+                .container span{
+                    font-size: small;
+                    margin-left: 60%;
+                    padding: 5px;
+                }
+                .btn{
+                    padding: 8px;
+                    border: none;
+                    border-radius: 10px;
+                    margin: 3% 0%;
+                    width: 30%;
+                    font-size: medium;
+                    font-weight: 500;
+                }
+                .btn-1{
+                    background:white;
+                    color: black;
+                }
+                .btn-2{
+                    background: red;
+                    color: white;
+                }
+            </style>
+        </head>
+        <body>
+            <section>
+                <div class="container">
+                    <h2 class="head">Sign Up</h2>
+                    <label>Enter the Name</label>
+                    <input type="text" id="in_1"/>
+                    <label>Enter the Moblie</label>
+                    <input type="number" id="in_2"/>
+                    <label>Create User Name</label>
+                    <input type="text" id="in_3"/>
+                    <span>ex : Sha*****$3241_19</span><br/>
+                    <label>Create Password</label>
+                    <input type="password" id="in_4"/>
+                    <button class="btn btn-1" id="btn">Submit</button>
+                    <button class="btn btn-2">Reset</button>
+                </div>
+            </section>
+            <script>
+                let btn = document.getElementById('btn');
+                let in_put = document.getElementById('in_3');
+                btn.addEventListener('click',show = () =>{
+                        let reg = in_put.value;
+                        let pattern =  /^[A-Z][\w]*[&][\d]{2,6}[_-][\d]{2}$/g
+                        if (pattern.test(reg) == true){
+                            alert(' Sign in Successfuly ');
+                        }
+                        else{
+                            alert('Incorrect User Name Place Enter corectly and follow the pattern');
+                        }
+                    });
+                btn.addEventListener('keydown', e =>{
+                    if(e.key == 'Enter'){
+                        return show();
+                    }
+                });
+            </script>
+        </body>
+    </html> -->
+
+<!-- ________________________________________ -->
+
+<!-- Reg-Exp Task 2 -->
+
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>User Validation</title>
+            <style>
+                *{
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                body {
+                    display: flex;
+                    height: 100vh;
+                    justify-content: center;
+                    align-items: center;
+                    background: url("https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg?w=2000");
+                }
+                .container{
+                    border: 1px solid black;
+                    border-radius: 10px ;
+                    padding: 10px 20px;
+                    height: 67vh;
+                    width: 60vh;
+                    color: white;
+                    background: linear-gradient( rgb(132, 240, 240) 1%,blue,rgb(68, 184, 238));
+                }
+                .container .head{
+                    text-align: center;
+                    padding: 10px;
+                    font-size: xx-large;
+                    font-family: cursive;
+                    color: black;
+                }
+                .container label{
+                    font-size: larger;
+                    margin: 5% 0%;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                .container input{
+                    display: block;
+                    border-radius: 3px 10px 10px 3px;
+                    padding: 6px;
+                    width: 100%;
+                    margin: 2% 0% ;
+                    /* border: none; */
+                    /* outline: none; */
+                    /* border-left: 3px solid black; */
+                    font-size: large;
+                }
+                .container span{
+                    font-size: small;
+                    margin-left: 60%;
+                    padding: 5px;
+                }
+                .btn{
+                    padding: 8px;
+                    border: none;
+                    border-radius: 10px;
+                    margin: 3% 0%;
+                    width: 30%;
+                    font-size: medium;
+                    font-weight: 500;
+                }
+                .btn-1{
+                    background:white;
+                    color: black;
+                }
+                .btn-2{
+                    background: red;
+                    color: white;
+                }
+            </style>
+        </head>
+        <body>
+            <section>
+                <div class="container">
+                    <h2 class="head">Sign Up</h2>
+                    <label>Enter the Name</label>
+                    <input type="text" id="in_1"/>
+                    <label>Enter the Moblie</label>
+                    <input type="number" id="in_2"/>
+                    <label>Create User Name</label>
+                    <input type="text" id="in_3"/>
+                    <span>ex : Sha*****$3241_19</span><br/>
+                    <label>Create Password</label>
+                    <input type="password" id="in_4"/>
+                    <button class="btn btn-1" id="btn">Submit</button>
+                    <button class="btn btn-2">Reset</button>
+                </div>
+            </section>
+            <script>
+                let btn = document.getElementById('btn');
+                let in_put = document.getElementById('in_3');
+                let num = document.getElementById('in_2');
+                btn.addEventListener('click',show = () =>{
+                        let reg = in_put.value;
+                        let test = num.value;
+                        let pattern_1 =  /^[A-Z][\w]*[&][\d]{2,6}[_-][\d]{2}$/g;
+                        let pattern_2 = /^[6-9][\d]{9}$/g;
+                        if (pattern_1.test(reg) == true)
+                        {
+                            alert(' Sign in Successfuly ');
+                            if (pattern_2.test(test) == true)
+                            {
+                                alert('Wellcome');
+                            }
+                            else
+                            {
+                                alert('Enter The Valid Moblie Number');
+                            }
+                        }
+                        else{
+                            alert('Incorrect User Name Place Enter corectly and follow the pattern');
+                        }
+                       
+                    });
+                btn.addEventListener('keydown', e =>{
+                    if(e.key == 'Enter'){
+                        return show();
+                    }
+                });
+            </script>
+        </body>
+    </html>

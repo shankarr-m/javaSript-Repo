@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+</head>
+<body>
+    <h1 id='head'></h1>
+    <script>
+        
+        let time =  () => {
+            let h_tag = document.getElementById('head');
+            let date = new Date()
+            let h = date.getHours()
+            let m = date.getMinutes()
+            let s = date.getSeconds() 
+            if ( h > 12) h = h-12;
+            if ( m < 9) m = '0'+m; 
+            if ( s < 9) s = '0'+s; 
+            h_tag.textContent = `0${h} : ${m} : ${s} `
+        }
+        /*setInterval(() => {
+            let h_tag = document.getElementById('head');
+            let date = new Date()
+            let h = date.getHours()
+            let m = date.getMinutes()
+            let s = date.getSeconds() 
+            if ( h > 12) h = h-12;
+            if ( m < 9) m = '0'+m; 
+            if ( s < 9) s = '0'+s; 
+            h_tag.textContent = `0${h} : ${m} : ${s} `
+        }, 1000);*/
+       setInterval(time, 1000);
+    </script>
+</body>
+</html>
